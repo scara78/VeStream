@@ -1,24 +1,17 @@
 # Netlify Configuration for VeStream
-# https://docs.netlify.com/configure-builds/file-based-configuration/
 
 [build]
   command = "npm run build"
-  publish = ".next"
+  # Do not set "publish" manually to ".next" for Next.js apps on Netlify. 
+  # The plugin handles the correct folder automatically.
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
   NPM_FLAGS = "--legacy-peer-deps"
 
-# Next.js Plugin for Netlify
+# Next.js Plugin for Netlify (Handles routing/SSR/API routes)
 [[plugins]]
   package = "@netlify/plugin-nextjs"
-
-# Redirects for SPA routing
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  conditions = {Role = ["admin"]}
 
 # Headers for security and caching
 [[headers]]
