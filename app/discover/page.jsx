@@ -146,22 +146,20 @@ export default function DiscoverPage() {
         <div className="mb-6 flex items-center gap-3">
           <button
             onClick={() => setMediaType('movie')}
-            className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all ${
-              mediaType === 'movie'
-                ? 'bg-[#00ff88] text-black'
-                : 'bg-white/10 text-white hover:bg-white/20'
-            }`}
+            className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all ${mediaType === 'movie'
+              ? 'bg-[#00ff88] text-black'
+              : 'bg-white/10 text-white hover:bg-white/20'
+              }`}
           >
             <Film className="w-4 h-4" />
             Movies
           </button>
           <button
             onClick={() => setMediaType('tv')}
-            className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all ${
-              mediaType === 'tv'
-                ? 'bg-[#00ff88] text-black'
-                : 'bg-white/10 text-white hover:bg-white/20'
-            }`}
+            className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all ${mediaType === 'tv'
+              ? 'bg-[#00ff88] text-black'
+              : 'bg-white/10 text-white hover:bg-white/20'
+              }`}
           >
             <Tv className="w-4 h-4" />
             TV Shows
@@ -175,11 +173,10 @@ export default function DiscoverPage() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all whitespace-nowrap ${
-                  activeTab === tab.id
-                    ? 'bg-[#00ff88] text-black'
-                    : 'bg-white/10 text-white hover:bg-white/20'
-                }`}
+                className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all whitespace-nowrap ${activeTab === tab.id
+                  ? 'bg-[#00ff88] text-black'
+                  : 'bg-white/10 text-white hover:bg-white/20'
+                  }`}
               >
                 <tab.icon className="w-4 h-4" />
                 {tab.label}
@@ -192,33 +189,30 @@ export default function DiscoverPage() {
             <div className="flex gap-2">
               <button
                 onClick={() => setShowFilters(!showFilters)}
-                className={`p-2 rounded-lg transition-colors ${
-                  showFilters
-                    ? 'bg-[#00ff88] text-black'
-                    : 'bg-white/10 text-white hover:bg-white/20'
-                }`}
+                className={`p-2 rounded-lg transition-colors ${showFilters
+                  ? 'bg-[#00ff88] text-black'
+                  : 'bg-white/10 text-white hover:bg-white/20'
+                  }`}
                 aria-label="Toggle filters"
               >
                 <Filter className="w-4 h-4" />
               </button>
               <button
                 onClick={() => setViewMode('grid')}
-                className={`p-2 rounded-lg transition-colors ${
-                  viewMode === 'grid'
-                    ? 'bg-[#00ff88] text-black'
-                    : 'bg-white/10 text-white hover:bg-white/20'
-                }`}
+                className={`p-2 rounded-lg transition-colors ${viewMode === 'grid'
+                  ? 'bg-[#00ff88] text-black'
+                  : 'bg-white/10 text-white hover:bg-white/20'
+                  }`}
                 aria-label="Grid view"
               >
                 <Grid className="w-4 h-4" />
               </button>
               <button
                 onClick={() => setViewMode('list')}
-                className={`p-2 rounded-lg transition-colors ${
-                  viewMode === 'list'
-                    ? 'bg-[#00ff88] text-black'
-                    : 'bg-white/10 text-white hover:bg-white/20'
-                }`}
+                className={`p-2 rounded-lg transition-colors ${viewMode === 'list'
+                  ? 'bg-[#00ff88] text-black'
+                  : 'bg-white/10 text-white hover:bg-white/20'
+                  }`}
                 aria-label="List view"
               >
                 <List className="w-4 h-4" />
