@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VeStream Theme Colors -->
+    
+    <!-- Primary Accent - Jungle Green -->
+    <color name="jungle_primary">#00FF88</color>
+    <color name="jungle_secondary">#00CC66</color>
+    <color name="jungle_dark">#004D26</color>
+    <color name="jungle_glow">#8000FF88</color>
+    
+    <!-- Background Colors -->
+    <color name="bg_main">#020617</color>
+    <color name="bg_surface">#0F172A</color>
+    <color name="bg_card">#1E293B</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_dim">#64748B</color>
+    
+    <!-- UI Colors -->
+    <color name="border">#1E293B</color>
+    <color name="glass">#D9020617</color>
+    
+    <!-- Status Colors -->
+    <color name="success">#10B981</color>
+    <color name="warning">#F59E0B</color>
+    <color name="error">#EF4444</color>
+    
+    <!-- Rating -->
+    <color name="rating_gold">#FBBF24</color>
+</resources>
