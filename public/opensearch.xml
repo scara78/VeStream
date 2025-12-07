@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>VeStream</ShortName>
+  <Description>Search movies and TV shows on VeStream</Description>
+  <Tags>movies tv shows streaming entertainment</Tags>
+  <Contact>support@vestream.com</Contact>
+  <Url type="text/html" template="https://vestream.com/?search={searchTerms}"/>
+  <Url type="application/x-suggestions+json" template="https://vestream.com/api/suggestions?q={searchTerms}"/>
+  <Image height="64" width="64" type="image/png">https://vestream.com/logo.png</Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <SearchForm>https://vestream.com</SearchForm>
+</OpenSearchDescription>
